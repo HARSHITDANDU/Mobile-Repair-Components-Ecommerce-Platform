@@ -1,0 +1,260 @@
+.main-container {
+    
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+
+
+.container {
+    position: relative;
+    background-color: #fff;
+    width: 80%;
+    /* 80% of screen width */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 8px;
+   
+}
+.close-btn {
+            
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: gray;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+}
+.close-btn:hover{
+    background-color: rgb(177, 5, 5);
+}
+.close-btn a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+.close-btn a:hover {
+color: white; 
+
+}
+.image {
+    flex: 1.5;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    border-right-style: solid;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.details {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: left;
+    padding: 20px;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+.price,.location,.contact_details{
+    font-size: 14px;
+    
+    
+}
+
+
+.product-price {
+    font-size: 40px;
+    color: rgb(219, 55, 5);
+    
+
+}
+.dis{
+    display: flex;
+    align-items: center;
+}
+
+.dis .old-price{
+    font-size: 20px;
+    color: gray;
+}
+
+.dis .discount{
+    font-size: 18px;
+    color: rgb(177, 5, 5);
+    margin-left: 10px;
+    
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.quantity button {
+    background-color: lightgray;
+    
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.quantity button:hover{
+    background-color: #3c8cce;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button.add-to-cart {
+    background-color: #0a5c80;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button.add-to-cart:hover {
+    background-color: #023e61;
+}
+
+
+
+/* feed back section*/
+/* Container styling */
+.feedback-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.feedback-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+/* Feedback card styling */
+.feedback-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 60%;
+    
+}
+
+.feedback-content {
+    flex-grow: 1;
+}
+
+.feedback-content h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.feedback-content p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Star rating */
+.star-rating {
+    color: #f39c12; /* Star color */
+    font-size: 18px;
+}
+
+.feedback-card img {
+    width: 90px;
+    height: 90px;
+   
+    margin-left: 15px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Pop-up container that appears on hover */
+.feedback-card:hover .popup-image {
+    display: block;
+}
+
+.popup-image {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    width: 200px !important;  /* Ensures the image enlarges */
+    height: 200px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        margin-top: 150px;
+        flex-direction: column;
+    }
+    img{
+        width: 200px;
+    }
+    .feedback-container {
+        margin-top: 100px;
+    }
+}
